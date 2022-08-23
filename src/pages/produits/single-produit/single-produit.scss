@@ -1,0 +1,14 @@
+page-single-produit {
+    
+    .isInStock {
+        ion-card-content, ion-card-header, ion-grid {
+        background-color: color($colors, secondary-light);
+        }
+        }
+    .outOfStock {
+        ion-card-content, ion-card-header, ion-grid {
+        background-color: color($colors, danger-light);
+            }
+        }
+        
+}

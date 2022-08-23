@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ProduitsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+   <ion-title>Nos Produits</ion-title>
+   <ion-buttons start>
+    <button ion-button icon-only (click)="onToggleMenu()">
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+<ion-list>
+ <p>ICI vous trouvez la liste des produits </p>
+ <button ion-item icon-start *ngFor="let produits of produitsList; let i = index" (click)="onLoadProduits(i)">
+  <ion-icon name="log-in" [color]="produits.isInStock ? 'secondary' : 'danger'"></ion-icon>
+  {{ produits.name }} 
+  <img classe="img" src="{{ produits.image }}" />
+ 
+</button>
+ 
+</ion-list>
+<button ion-button full (click)="onNewAppareil()">Nouvel produit</button>
+
+<!--<ion-card>
+  <ion-card-header>Données</ion-card-header>
+  <ion-card-content>
+  <button ion-button block outline (click)="onSaveList()">Enregistrer</button>
+  <button ion-button block outline (click)="onFetchList()">Récupérer</button>
+  </ion-card-content>
+  </ion-card>-->
+</ion-content>
+
+<ion-footer padding >
+
+<p>Bas de page </p>
+
+</ion-footer>

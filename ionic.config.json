@@ -1,0 +1,8 @@
+{
+  "name": "Merchic",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "ionic-angular"
+}
